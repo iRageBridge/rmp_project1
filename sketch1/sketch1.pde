@@ -18,3 +18,9 @@ void draw(){
     circles[i].paint();
   }
 }
+
+void keyPressed(){
+  if (keyCode == UP){
+    println("UP Pressed");
+  }
+}
