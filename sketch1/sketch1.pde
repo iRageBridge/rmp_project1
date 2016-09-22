@@ -20,7 +20,10 @@ void draw(){
 }
 
 void keyPressed(){
-  if (keyCode == UP){
-    println("UP Pressed");
+  for (int j =0; j<numCircles; j++){
+    if (keyCode == UP){
+      println("UP Pressed");
+        circles[j].y -=10;
+    }
   }
 }
