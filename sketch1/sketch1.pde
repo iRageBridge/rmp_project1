@@ -25,5 +25,20 @@ void keyPressed(){
       println("UP Pressed");
         circles[j].y -=10;
     }
+    
+    if (keyCode == DOWN){
+      println("UP Pressed");
+        circles[j].y +=10;
+    }
+    
+    if (keyCode == LEFT){
+      println("UP Pressed");
+        circles[j].x -=10;
+    }
+    
+    if (keyCode == RIGHT){
+      println("UP Pressed");
+        circles[j].x +=10;
+    }
   }
 }
