@@ -27,17 +27,17 @@ void keyPressed(){
     }
     
     if (keyCode == DOWN){
-      println("UP Pressed");
+      println("DOWN Pressed");
         circles[j].y +=10;
     }
     
     if (keyCode == LEFT){
-      println("UP Pressed");
+      println("LEFT Pressed");
         circles[j].x -=10;
     }
     
     if (keyCode == RIGHT){
-      println("UP Pressed");
+      println("RIGHT Pressed");
         circles[j].x +=10;
     }
   }
