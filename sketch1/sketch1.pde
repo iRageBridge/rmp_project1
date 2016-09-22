@@ -13,5 +13,8 @@ void setup(){
 
 void draw(){
   background(122);
-
+  
+  for (int i = 0; i < numCircles; i++){
+    circles[i].paint();
+  }
 }
