@@ -14,11 +14,11 @@ void setup(){
 
 void draw(){
   background(122);
-  myFace.paint();
   
   for (int i = 0; i < numCircles; i++){
     circles[i].paint();
   }
+  myFace.paint();
 }
 
 void keyPressed(){
