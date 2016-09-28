@@ -6,6 +6,8 @@ class Circle{
   float cColour2 = random(255);
   float cColour3 = random(255);
   
+  //Method to create and paint circles.
+  
   Circle(float x, float y){
     this.x = x;
     this.y = y;
