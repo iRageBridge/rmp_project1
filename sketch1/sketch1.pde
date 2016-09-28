@@ -1,6 +1,6 @@
 int numCircles = 20;
 Circle [] circles = new Circle [numCircles];
-Face myFace = new Face();
+Face myFace = new Face(200, 200);
 
 void setup(){
   size (400,400);
@@ -27,7 +27,6 @@ void draw(){
   //Calling the face class.
   
   myFace.paint();
-
 
 //Detecting key input in the following funtion, and changing the x and y coordinates of all 20 circles at once.
 

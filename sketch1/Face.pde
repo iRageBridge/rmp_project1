@@ -1,4 +1,11 @@
 class Face{
+  float x;
+  float y;
+  
+  Face(float x, float y){
+    this.x = x;
+    this.y = y;
+  }
   
   void paint(){
     paint(0,0);
