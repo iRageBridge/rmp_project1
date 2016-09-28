@@ -27,30 +27,26 @@ void draw(){
   //Calling the face class.
   
   myFace.paint();
-}
+
 
 //Detecting key input in the following funtion, and changing the x and y coordinates of all 20 circles at once.
 
-void keyPressed(){
+//void keyPressed(){
   for (int j =0; j<numCircles; j++){
-    if (keyCode == UP){
-      println("UP Pressed");
+    if (keyCode == UP && keyPressed){
         circles[j].y -=10;
     }
     
-    if (keyCode == DOWN){
-      println("DOWN Pressed");
+    if (keyCode == DOWN && keyPressed){
         circles[j].y +=10;
     }
     
-    if (keyCode == LEFT){
-      println("LEFT Pressed");
+    if (keyCode == LEFT && keyPressed){
         circles[j].x -=10;
     }
     
-    if (keyCode == RIGHT){
-      println("RIGHT Pressed");
-        circles[j].x +=10;
+    if (keyCode == RIGHT && keyPressed){
+      circles[j].x +=10;
     }
   }
 }
