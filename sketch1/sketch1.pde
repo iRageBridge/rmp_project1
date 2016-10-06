@@ -19,7 +19,7 @@ void draw(){
   background(122);
   
   //Now that the circles are created, time to add them to the stage, this adds 20 circles to the stage.
-  
+  //If statements cause infinite scrolling of circles.
   for (int i = 0; i < numCircles; i++){
     circles[i].paint();
     if(circles[i].x <= 0){

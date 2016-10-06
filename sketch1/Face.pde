@@ -30,25 +30,63 @@ class Face{
     fill(100);
     arc(mouseX, mouseY, 80, 100, 0, PI);
     
-    //Left Pupil
+    //Left Eye
     
     fill(255,255,255);
     ellipse(mouseX-25,mouseY-20,25,25);
     
-    //Left Eye
-    
+    //Left Pupil
+    //If statements cause pupils to look in direction of circles.
     fill(0,0,0);
-    ellipse(mouseX-25,mouseY-20,5,5);
+    if(keyCode == RIGHT && keyPressed){
+      ellipse(mouseX-15, mouseY-20, 5,5);
+    }
     
-    //Right Pupil
+    else if(keyCode == UP && keyPressed){
+      ellipse(mouseX-25, mouseY-30, 5,5);
+    }
+    
+    else if(keyCode == DOWN && keyPressed){
+      ellipse(mouseX-25, mouseY-10, 5,5);
+    }
+    
+    else if(keyCode == LEFT && keyPressed){
+      ellipse(mouseX-35, mouseY-20, 5,5);
+    }
+    
+    else{
+      ellipse(mouseX-25,mouseY-20,5,5);
+    }
+    
+    //Right Eye
     
     fill(255,255,255);
     ellipse(mouseX+25,mouseY-20,25,25);
     
-    //Right Eye
+    //Right Pupil
     
+    //If statements cause pupils to look in direction of circles.
     fill(0,0,0);
-    ellipse(mouseX+25,mouseY-20,5,5);
+    if(keyCode == LEFT && keyPressed){
+      ellipse(mouseX+15, mouseY-20, 5,5);
+    }
+    
+    else if(keyCode == UP && keyPressed){
+      ellipse(mouseX+25, mouseY-30, 5,5);
+    }
+    
+    else if(keyCode == DOWN && keyPressed){
+      ellipse(mouseX+25, mouseY-10, 5,5);
+    }
+    
+    else if(keyCode == RIGHT && keyPressed){
+      ellipse(mouseX+35, mouseY-20, 5,5);
+    }
+    
+    else{
+      ellipse(mouseX+25,mouseY-20,5,5);
+    }
+    
     
     //Mouth
     
