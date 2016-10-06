@@ -22,6 +22,21 @@ void draw(){
   
   for (int i = 0; i < numCircles; i++){
     circles[i].paint();
+    if(circles[i].x <= 0){
+      circles[i].x = 400;
+    }
+    
+    if(circles[i].x >= width && keyCode == RIGHT){
+      circles[i].x = 0;
+    }
+    
+    if(circles[i].y <= 0){
+      circles[i].y = 400;
+    }
+    
+    if(circles[i].y >= height && keyCode == DOWN){
+      circles[i].y = 0;
+    }
   }
   
   //Calling the face class.
